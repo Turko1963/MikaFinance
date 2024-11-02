@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="מיקה פיננסים - הבוט החכם שיעזור לך להבין את שוק ההון בקלות">
+    <meta property="og:title" content="מיקה פיננסים">
+    <meta property="og:description" content="הבוט החכם שיעזור לך להבין את שוק ההון בקלות">
+    <meta property="og:type" content="website">
+    
+    <title>מיקה פיננסים - הבוט החכם שלך לשוק ההון</title>
+    
+    <!-- Font Awesome מ-CDN מאובטח -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+            color: white;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(45deg, #00ff88, #00c3ff);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+            color: #b3b3b3;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            background: linear-gradient(45deg, #00ff88, #00c3ff);
+            color: #000;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: transform 0.3s;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .donate-button {
+            background: linear-gradient(45deg, #ff8800, #ff0088);
+            margin-top: 0;
+            font-size: 1rem;
+            padding: 10px 30px;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin: 60px 0;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            text-align: center;
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #00ff88;
+        }
+
+        .chat-preview {
+            background: #075e54;
+            border-radius: 15px;
+            padding: 20px;
+            margin: 40px auto;
+            max-width: 400px;
+        }
+
+        .message {
+            background: white;
+            color: black;
+            padding: 10px 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            max-width: 80%;
+        }
+
+        .bot-message {
+            background: #dcf8c6;
+            margin-right: auto;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .subtitle {
+                font-size: 1.2rem;
+            }
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="hero">
+            <h1>מיקה פיננסים</h1>
+            <p class="subtitle">הבוט החכם שיעזור לך להבין את שוק ההון בקלות</p>
+            
+            <div class="chat-preview">
+                <div class="message">היי מיקה! 👋 שמעתי שאת מבינה בשוק ההון</div>
+                <div class="message bot-message">היי! כן, אני פה בשביל להפוך את שוק ההון למובן וכיף! 🚀</div>
+                <div class="message">מעולה! אני ממש מתחיל/ה, איך מתחילים?</div>
+                <div class="message bot-message">קודם כל - אל תלחץ/י! 😊 אני אלווה אותך צעד אחר צעד ונלמד ביחד בקצב שלך 🎯</div>
+            </div>
+
+            <a href="https://wa.me/972549669657" class="cta-button">התחל לשוחח איתי</a>
+
+            <div class="features">
+                <div class="feature-card">
+                    <i class="fas fa-robot feature-icon"></i>
+                    <h3>AI חכם</h3>
+                    <p>מערכת בינה מלאכותית מתקדמת שלומדת ומתאימה את עצמה אליך</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chart-line feature-icon"></i>
+                    <h3>ניתוח מקצועי</h3>
+                    <p>קבל ניתוחים מקצועיים ועדכונים בזמן אמת על השוק</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-graduation-cap feature-icon"></i>
+                    <h3>למידה מותאמת אישית</h3>
+                    <p>לומד את הקצב שלך ומתאים את החומר לרמת הידע שלך</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-gift feature-icon"></i>
+                    <h3>חינמי לגמרי!</h3>
+                    <p>כל התכונות והיכולות זמינות בחינם, ללא הגבלה וללא תשלום נסתר</p>
+                </div>
+            </div>
+
+            <a href="https://paypal.me/tradingleader?country.x=IL&locale.x=en_US" class="cta-button donate-button">
+                <i class="fas fa-heart" style="margin-left: 8px;"></i>
+                תרומה לפרויקט
+            </a>
+        </section>
+    </div>
+</body>
+</html>
